@@ -1,0 +1,9 @@
+@Test
+
+   public void stringSwap() {
+
+         Reverse help=new Reverse();
+
+         Assert.assertEquals("SELENIUM", help.reverse("SELENIUM"));   
+
+   }
