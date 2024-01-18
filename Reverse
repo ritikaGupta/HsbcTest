@@ -7,7 +7,13 @@ public class Reverse{
   public static void main(String[] args) throws IOException{
       FileReader fileReader = new FileReader("input.txt");
       FileWriter fileWriter = new FileWriter("output.txt");
-        try{
+        reverse(fileReader,fileWriter);
+        fileReader.close();
+        fileWriter.close();
+  }
+
+public reverse(FileReader fileReader, FileWriter fileWriter) throws IOException{
+      try{
               Scanner sc = new Scanner(fileReader);
               While(sc.hasNext()){
                   String str = sc.nextLine();
@@ -19,7 +25,5 @@ public class Reverse{
         catch(Exception e){
           System.out.println("Something went wrong");
           }
-        fileReader.close();
-        fileWriter.close();
   }
 }
